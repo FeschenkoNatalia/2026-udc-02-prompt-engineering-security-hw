@@ -72,7 +72,7 @@ Error message format: include the invalid value, e.g. "n must be a positive inte
 </context>
 
 <constraints>
-- Modify only files inside app/src/.
+- Modify only app/src/money.ts and app/src/money.test.ts; do not touch other files.
 - Throw Error (not custom classes); include the invalid value in the message.
 - Do not change function signatures or other logic.
 - No external validation libraries; no new npm packages.
@@ -96,5 +96,8 @@ Error message format: include the invalid value, e.g. "n must be a positive inte
 ## Verified
 
 - [x] splitEvenly(100, 0) throws with message containing "0"
+- [x] splitEvenly(100, -1) throws with message containing "-1"
+- [x] splitEvenly(100, 1.5) throws with message containing "1.5"
 - [x] applyDiscount(100, 110) throws with message containing "110"
+- [x] applyDiscount(100, -5) throws with message containing "-5"
 - [x] Ran `cd app && npx vitest run` — all tests passed
