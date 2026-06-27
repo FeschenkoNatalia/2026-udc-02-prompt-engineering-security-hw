@@ -57,8 +57,7 @@ Stop rules:
 You are a senior TypeScript engineer. Add guard clauses to splitEvenly and
 applyDiscount in app/src/money.ts. Throw Error with a message that includes the
 invalid value. Also add tests for the new throws in app/src/money.test.ts.
-Before finishing, verify: (1) splitEvenly(100,0) throws, (2) applyDiscount(100,110)
-throws, (3) npx vitest run exits 0.
+Before finishing, verify: (1) splitEvenly(100,0), splitEvenly(100,-1), and splitEvenly(100,1.5) throw, (2) applyDiscount(100,110) and applyDiscount(100,-5) throw, (3) npx vitest run exits 0.
 </instructions>
 
 <context>

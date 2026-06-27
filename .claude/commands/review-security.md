@@ -29,8 +29,8 @@ Acceptance criteria:
 - At least 3 findings OR justify why fewer exist.
 - For each: file:line, attack/failure scenario, impact, minimal fix.
 - Cover: missing guard conditions (NaN, Infinity, out-of-range, non-integer),
-  silent wrong results from unvalidated inputs, integer overflow near
-  MAX_SAFE_INTEGER, and untrusted-input reflection in error messages.
+  silent wrong results from unvalidated inputs, precision loss from unsafe integers
+  near Number.MAX_SAFE_INTEGER, and untrusted-input reflection in error messages.
 Output:
 - Numbered findings, most severe first.
 Stop rules:
@@ -61,8 +61,8 @@ parseAmount(). Other functions accept numbers directly with no validation.
 - Review only; do NOT edit code in this pass.
 - At least 3 findings or justify why fewer exist.
 - Cover: missing guards on numeric parameters (NaN, Infinity, negative, zero,
-  non-integer), silent wrong results from out-of-range inputs, integer overflow
-  near Number.MAX_SAFE_INTEGER, error messages that reflect untrusted input verbatim.
+  non-integer), silent wrong results from out-of-range inputs, precision loss
+  from unsafe integers near Number.MAX_SAFE_INTEGER, error messages that reflect untrusted input verbatim.
 - No real secrets or PII in output.
 </constraints>
 

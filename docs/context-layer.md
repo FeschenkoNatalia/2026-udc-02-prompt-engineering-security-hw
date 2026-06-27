@@ -39,6 +39,10 @@
 npx repomix --no-default-patterns --no-gitignore --output /dev/null
 # → 955 files, 8 547 114 tokens
 
+# Після — з .aiignore, без node_modules
+npx repomix --output /dev/null
+# → 42 files, 35 660 tokens
+
 # Після — вузький @file, лише money.ts
 npx repomix --include "app/src/money.ts" --output /dev/null
 # → 1 file, 864 tokens

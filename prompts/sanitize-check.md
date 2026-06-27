@@ -23,7 +23,7 @@ Goal: Classify every field in $ARGUMENTS by sensitivity tier (🔴/🟡/🟢),
       then produce a sanitized version safe to share with a public AI tool.
 Context: See docs/sanitization-checklist.md for classification rules and masking techniques.
 Constraints:
-- Output a sanitized copy of the file only — do NOT send the original values in your response.
+- Do NOT echo original field values in your response in any form; mask per the rules below.
 - Use [REDACTED] for irrelevant sensitive fields, <PLACEHOLDER> for structural fields,
   and realistic synthetic values (user@example.test) when the model needs plausible data.
 - Secrets (KEY, TOKEN, SECRET, .env values) — flag as out-of-band; do not include in any form,
