@@ -4,7 +4,7 @@ Starter repo for the second homework of the UDC "Modern Development with Agentic
 AI" course.
 
 > Workshop 2: **Промпт-інженерія та безпека роботи з AI** (Prompt engineering & security)
-> Автор: В'ячеслав Колдовський (Programming Mentor)
+> Автор: Programming Mentor
 
 This is an **artifacts-first** exercise: you build a reusable **prompt cookbook**,
 a **data-sanitization checklist**, and a **prompt-injection defense** — concrete
