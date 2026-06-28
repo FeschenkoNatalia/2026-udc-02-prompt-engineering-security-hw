@@ -4,7 +4,7 @@
 
 ## Промпт A — базовий
 
-```text
+```
 add validation to money.ts
 ```
 
